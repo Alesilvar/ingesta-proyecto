@@ -12,4 +12,4 @@ COPY . .
 # Comando para ejecutar el script de i
 
 
-CMD ["python3", "./ingesta.py"]
+CMD ["python3", "./ingesta01.py"]
