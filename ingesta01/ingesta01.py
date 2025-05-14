@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Configuración MongoDB desde variables de entorno
-mongo_uri = os.getenv('MONGODB_URI', 'mongodb://localhost:27017/postsdb')  # URL de conexión a MongoDB
+mongo_uri = os.getenv('MONGODB_URI', 'mongodb://172.31.26.161:27017')  # URL de conexión a MongoDB
 db_name = os.getenv('DB_NAME', 'postsdb')  # Nombre de la base de datos
 collection_name = 'posts'  # La colección donde se insertarán los posts
 
@@ -17,7 +17,7 @@ collection_name = 'posts'  # La colección donde se insertarán los posts
 fichero_upload = 'data_posts.csv'
 
 # Bucket S3 (ahora configurado como ingesta01)
-nombre_bucket = 'ingesta01'  # Modificado para que use ingesta01
+nombre_bucket = 'lumina-dataa'  # Modificado para que use ingesta01
 
 # Instanciar Faker para generar datos falsos
 fake = Faker()
